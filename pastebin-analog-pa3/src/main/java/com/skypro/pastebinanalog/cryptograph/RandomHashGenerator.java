@@ -3,7 +3,6 @@ package com.skypro.pastebinanalog.cryptograph;
 import java.util.Random;
 
 public class RandomHashGenerator {
-
     private static final String CHARSET = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!@#$%^&*()-_=+[]{}|;:,.<>?/~`";
     private static final int HASH_LENGTH = 8;
 
@@ -17,5 +16,4 @@ public class RandomHashGenerator {
         }
         return sb.toString();
     }
-
 }

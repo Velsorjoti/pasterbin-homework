@@ -13,7 +13,6 @@ import java.util.Optional;
 
 @Repository
 public interface PastaRepository extends JpaRepository<Pasta, Long> {
-
     @Modifying
     @Query(value="DELETE FROM Pasta p WHERE p.expiredDate < now()")
     void deleteAllByExpiredDateIsBefore(Instant now);
@@ -24,5 +23,4 @@ public interface PastaRepository extends JpaRepository<Pasta, Long> {
 
     @Query("SELECT p FROM Pasta p WHERE p.status = ?1 AND p.expiredDate > now() AND p.title = ?2 OR p.body LIKE ?3")
     List<Pasta> findAllByTitleContainsOrBodyContains(Status status, String title, String body);
-
 }

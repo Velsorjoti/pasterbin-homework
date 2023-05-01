@@ -6,7 +6,6 @@ import java.time.temporal.ChronoUnit;
 
 @Getter
 public enum ExpirationTime {
-
     TEN_MIN(10, ChronoUnit.MINUTES),
     HOUR(1, ChronoUnit.HOURS),
     THREE_HOURS(3, ChronoUnit.HOURS),
@@ -22,6 +21,5 @@ public enum ExpirationTime {
         this.time = time;
         this.unit = unit;
     }
-
 }
 

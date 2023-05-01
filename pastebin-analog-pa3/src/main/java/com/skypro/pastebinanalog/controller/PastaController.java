@@ -12,7 +12,6 @@ import java.util.List;
 @RestController
 @RequestMapping("/my-awesome-pastebin.tld")
 public class PastaController {
-
     private final PastaService pastaService;
 
     public PastaController(PastaService pasteFieldService) {
@@ -39,5 +38,4 @@ public class PastaController {
                                                    @RequestParam(required = false) String body){
         return ResponseEntity.ok(pastaService.searchBy(title, body));
     }
-
 }

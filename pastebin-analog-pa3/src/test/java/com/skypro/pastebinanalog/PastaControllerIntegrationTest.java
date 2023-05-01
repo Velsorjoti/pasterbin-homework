@@ -39,7 +39,6 @@ public class PastaControllerIntegrationTest {
     private static final Instant PUBLISHED_DATE = Instant.now();
     private static final ExpirationTime PASTA_EXPIRATION = ExpirationTime.THREE_HOURS;
 
-
     @BeforeEach
     public void setUp() {
         pasta.setTitle(PASTA_TITLE);
@@ -55,7 +54,6 @@ public class PastaControllerIntegrationTest {
     public void cleanUp() {
         pastaRepository.delete(pasta);
     }
-
 
     @Test
     public void testGetByHash() throws Exception {
@@ -99,5 +97,4 @@ public class PastaControllerIntegrationTest {
                 .andExpect(jsonPath("$[0].title").value(PASTA_TITLE))
                 .andExpect(jsonPath("$[0].body").value(PASTA_BODY));
     }
-
 }

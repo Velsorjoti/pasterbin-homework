@@ -17,7 +17,6 @@ import java.util.stream.Collectors;
 
 @Service
 public class PastaService {
-
     private final PastaRepository pastaRepository;
 
     public PastaService(PastaRepository pastaRepository) {
@@ -58,5 +57,4 @@ public class PastaService {
                 .map(PastaDTO::from)
                 .collect(Collectors.toList());
     }
-
 }

@@ -7,7 +7,6 @@ import lombok.Data;
 
 @Data
 public class PastaCreateDTO {
-
     private String title;
     private String body;
     private Status status;
@@ -20,5 +19,4 @@ public class PastaCreateDTO {
         pasta.setStatus(this.getStatus());
         return pasta;
     }
-
 }

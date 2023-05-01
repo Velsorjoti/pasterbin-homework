@@ -12,7 +12,6 @@ import java.time.Instant;
 @Getter
 @Setter
 public class Pasta {
-
     @Id
     private String hash;
     private String title;
@@ -21,5 +20,4 @@ public class Pasta {
     private Instant expiredDate;
     @Enumerated(EnumType.STRING)
     private Status status;
-
 }

@@ -6,7 +6,6 @@ import lombok.*;
 
 @Data
 public class PastaUrlDTO {
-
     private static String baseUrl = "my-awesome-pastebin.tld/";
     private String url;
 
@@ -15,5 +14,4 @@ public class PastaUrlDTO {
         url.setUrl(baseUrl + pasta.getHash());
         return url;
     }
-
 }

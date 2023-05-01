@@ -28,12 +28,10 @@ import static org.mockito.Mockito.*;
 
 @ExtendWith(MockitoExtension.class)
 public class PastaServiceTest {
-
     @Mock
     private PastaRepository repositoryMock;
     @InjectMocks
     private PastaService pastaService;
-
 
     @Test
     public void testCreatePastaShouldReturnNotNullUrl() {
@@ -68,7 +66,6 @@ public class PastaServiceTest {
         assertEquals(body, pastaDTO.getBody());
     }
 
-
     @Test
     public void testGetPastaByHashThrowsException() {
         String hash = RandomHashGenerator.generateHash();
@@ -78,7 +75,6 @@ public class PastaServiceTest {
 
         assertThrows(PastaNotFoundException.class, () -> pastaService.getPastaByHash(hash));
     }
-
 
     @Test
     public void testGetPublicListShouldReturnCorrectList() {
@@ -137,5 +133,4 @@ public class PastaServiceTest {
         assertEquals(pasta2.getTitle(), pastaDTOList.get(1).getTitle());
         assertEquals(pasta2.getBody(), pastaDTOList.get(1).getBody());
     }
-
 }
