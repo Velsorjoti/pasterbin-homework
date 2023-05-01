@@ -9,3 +9,4 @@ class PastebinAnalogApplicationTests {
     void contextLoads() {
     }
 }
+

@@ -98,3 +98,4 @@ public class PastaControllerIntegrationTest {
                 .andExpect(jsonPath("$[0].body").value(PASTA_BODY));
     }
 }
+

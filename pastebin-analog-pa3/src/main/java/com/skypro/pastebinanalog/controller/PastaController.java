@@ -39,3 +39,4 @@ public class PastaController {
         return ResponseEntity.ok(pastaService.searchBy(title, body));
     }
 }
+

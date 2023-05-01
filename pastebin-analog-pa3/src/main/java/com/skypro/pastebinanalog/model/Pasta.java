@@ -21,3 +21,4 @@ public class Pasta {
     @Enumerated(EnumType.STRING)
     private Status status;
 }
+
