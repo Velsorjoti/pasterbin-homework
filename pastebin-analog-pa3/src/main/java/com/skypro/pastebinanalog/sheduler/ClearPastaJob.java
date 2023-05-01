@@ -22,3 +22,5 @@ public class ClearPastaJob {
         pastaRepository.deleteAllByExpiredDateIsBefore(Instant.now());
     }
 }
+
+

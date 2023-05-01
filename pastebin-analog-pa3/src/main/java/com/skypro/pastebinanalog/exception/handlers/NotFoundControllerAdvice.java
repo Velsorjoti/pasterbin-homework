@@ -12,3 +12,4 @@ public class NotFoundControllerAdvice {
         return ResponseEntity.status(404).body("Pasta not found");
     }
 }
+

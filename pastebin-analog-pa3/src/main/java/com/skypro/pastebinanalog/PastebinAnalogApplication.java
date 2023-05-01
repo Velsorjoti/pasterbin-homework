@@ -12,3 +12,4 @@ public class PastebinAnalogApplication {
         SpringApplication.run(PastebinAnalogApplication.class, args);
     }
 }
+
