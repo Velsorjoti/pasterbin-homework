@@ -19,18 +19,18 @@ ___
 ## Инструменты, используемые в проекте:
 
 * **Backend**:
-Java 11
-Maven
-Spring Boot
-Spring Data JPA
-Swagger
-Lombok
+ - Java 11
+ - Maven
+ - Spring Boot
+ - Spring Data JPA
+ - Swagger
+ - Lombok
 * **SQL**:
-PostgreSQL
-H2-database
+ - PostgreSQL
+ - H2-database
 * **Test**:
-Junit
-Mockito
+ - Junit
+ - Mockito
 
 ___
 ## Запуск приложения
